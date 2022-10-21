@@ -1,62 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/images/favicon/favicon-114x114.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon/favicon-114x114.png"
+      type="image/x-icon"
+    />
     <title>ETHIndia | Clone Project</title>
-    <link as="font" rel="preload" href="assets/fonts/fragile/Fragile.otf" type="font/otf" crossorigin="anonymous" />
-    <link as="font" rel="preload" href="assets/fonts/circular/CircularStd-Book.woff" type="font/woff" crossorigin="anonymous" />
-    <link as="font" rel="preload" href="assets/fonts/circular/CircularStd-BookItalic.otf" type="font/otf" crossorigin="anonymous" />
-    <link as="font" rel="preload" href="assets/fonts/circular/CircularStd-Bold.woff" type="font/woff" crossorigin="anonymous" />
-    <link as="font" rel="preload" href="assets/fonts/circular/CircularStd-BoldItalic.otf" type="font/otf" crossorigin="anonymous" />
-    <link as="font" rel="preload" href="assets/fonts/circular/CircularStd-Light.woff" type="font/woff" crossorigin="anonymous" />
-    <link as="font" rel="preload" href="assets/fonts/circular/CircularStd-LightItalic.otf" type="font/otf" crossorigin="anonymous" />
+    <link
+      as="font"
+      rel="preload"
+      href="assets/fonts/fragile/Fragile.otf"
+      type="font/otf"
+      crossorigin="anonymous"
+    />
+    <link
+      as="font"
+      rel="preload"
+      href="assets/fonts/circular/CircularStd-Book.woff"
+      type="font/woff"
+      crossorigin="anonymous"
+    />
+    <link
+      as="font"
+      rel="preload"
+      href="assets/fonts/circular/CircularStd-BookItalic.otf"
+      type="font/otf"
+      crossorigin="anonymous"
+    />
+    <link
+      as="font"
+      rel="preload"
+      href="assets/fonts/circular/CircularStd-Bold.woff"
+      type="font/woff"
+      crossorigin="anonymous"
+    />
+    <link
+      as="font"
+      rel="preload"
+      href="assets/fonts/circular/CircularStd-BoldItalic.otf"
+      type="font/otf"
+      crossorigin="anonymous"
+    />
+    <link
+      as="font"
+      rel="preload"
+      href="assets/fonts/circular/CircularStd-Light.woff"
+      type="font/woff"
+      crossorigin="anonymous"
+    />
+    <link
+      as="font"
+      rel="preload"
+      href="assets/fonts/circular/CircularStd-LightItalic.otf"
+      type="font/otf"
+      crossorigin="anonymous"
+    />
     <meta name="application-name" content="ETHIndia" />
     <meta name="theme-color" content="#003B50" />
 
-    <link rel="stylesheet" href="assets/styles/variable.css">
-    <link rel="stylesheet" href="assets/styles/global.css">
-    <link rel="stylesheet" href="assets/styles/about.css">
-    <link rel="stylesheet" href="assets/styles/popup.css">
-    <link rel="stylesheet" href="assets/styles/celebrating.css">
+    <link rel="stylesheet" href="assets/styles/variable.css" />
+    <link rel="stylesheet" href="assets/styles/global.css" />
+    <link rel="stylesheet" href="assets/styles/about.css" />
+    <link rel="stylesheet" href="assets/styles/popup.css" />
+    <link rel="stylesheet" href="assets/styles/celebrating.css" />
+    <link rel="stylesheet" href="assets/styles/faq.css" />
+    <link rel="stylesheet" href="assets/styles/partners.css" />
+
+    <script src="assets/scripts/faq.js"></script>
     <script src="assets/scripts/popup.js"></script>
-    <link rel="stylesheet" href="nav.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <link rel="stylesheet" href="nav.css" /> -->
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div class="popup" id="popup">
-        <div class="popup-cntnt">
-            <button class="close-popup-btn" onclick="closePopup();">&#10006;</button>
-            <div class="popup-dt">
-                <div class="indi-dt-box popup-banner">
-                    Create a Devfolio account to continue your application to ETHIndia 2022.
-                </div>
-                <div class="popup-lg-cntnr">
-                    <img src="assets/svg/devfolio-logowname.svg" alt="">
-                </div>
-                <div class="popup-tgln">
-                    <h1>
-                        Your one application
-                        <br>
-                        to the best hackathons
-                    </h1>
-                </div>
-                <div class="indi-dt-box form-cntnr">
-                    <form action="" method="POST" id="signup-form">
-
-                    </form>
-                </div>
-            </div>
+      <div class="popup-cntnt">
+        <button class="close-popup-btn" onclick="closePopup();">
+          &#10006;
+        </button>
+        <div class="popup-dt">
+          <div class="indi-dt-box popup-banner">
+            Create a Devfolio account to continue your application to ETHIndia
+            2022.
+          </div>
+          <div class="popup-lg-cntnr">
+            <img src="assets/svg/devfolio-logowname.svg" alt="" />
+          </div>
+          <div class="popup-tgln">
+            <h1>
+              Your one application
+              <br />
+              to the best hackathons
+            </h1>
+          </div>
+          <div class="indi-dt-box form-cntnr">
+            <form action="" method="POST" id="signup-form"></form>
+          </div>
         </div>
+      </div>
     </div>
     <header></header>
 
     <main>
-        <nav id="full-screen" class="full-screen-display threeForth-screen-display show">
+      <!-- <nav id="full-screen" class="full-screen-display threeForth-screen-display show">
             <img
               class="nav-img-div show full-screen-display threeForth-screen-display"
               src="assets/images/logo/EthIndia-Logo.png"
@@ -75,51 +126,269 @@
                 <button class="apply-btn"><img src="" alt="D" /> Apply now</button>
               </div>
             </div>
-          </nav>
-        <section id="about">
-            <div id="hero">
-                <div class="sky-img-cntnr">
-                    <img src="assets/images/page/sky.webp" alt="background sky" loading="lazy">
-                </div>
-                <img src="assets/images/page/bengaluru-street.webp" alt="bengaluru street" class="bnglr-street">
-                <div class="hero-text">
-                    <h1 class="font-fragile">Asia's Biggest Ethereum Hackathon</h1>
-                    <h3 class="font-circular">Dec 2nd - 4th, 2022 · Bengaluru</h3>
-                    <div class="btn-lg-cntnr">
-                        <div class="btn-cntnr">
-                            <button class="apply-btn" onclick='openPopup()'>
-                                <img src="assets/images/page/devfolio-logo-white.png" alt=""> Apply Now
-                            </button>
-                        </div>
-                        <div class="lg-cntnr">
-                            <img src="assets/svg/ethglobal-logo-name.svg" alt="">
-                            <div class="lg-cntnr-sprtr"></div>
-                            <img src="assets/svg/devfolio-logo.svg" alt="">
-                        </div>
-                    </div>
-                </div>
+          </nav> -->
+      <section id="about">
+        <div id="hero">
+          <div class="sky-img-cntnr">
+            <img
+              src="assets/images/page/sky.webp"
+              alt="background sky"
+              loading="lazy"
+            />
+          </div>
+          <img
+            src="assets/images/page/bengaluru-street.webp"
+            alt="bengaluru street"
+            class="bnglr-street"
+          />
+          <div class="hero-text">
+            <h1 class="font-fragile">Asia's Biggest Ethereum Hackathon</h1>
+            <h3 class="font-circular">Dec 2nd - 4th, 2022 · Bengaluru</h3>
+            <div class="btn-lg-cntnr">
+              <div class="btn-cntnr">
+                <button class="apply-btn" onclick="openPopup()">
+                  <img
+                    src="assets/images/page/devfolio-logo-white.png"
+                    alt=""
+                  />
+                  Apply Now
+                </button>
+              </div>
+              <div class="lg-cntnr">
+                <img src="assets/svg/ethglobal-logo-name.svg" alt="" />
+                <div class="lg-cntnr-sprtr"></div>
+                <img src="assets/svg/devfolio-logo.svg" alt="" />
+              </div>
             </div>
-        </section>
-        <section id="celebrating">
+          </div>
+        </div>
+      </section>
+      <section id="celebrating">
         <div class="content">
-            <div>
-            <h2 class="font-fragile same-line">Celebrating our love for building</h2>
-            </div>
-            <div>
-            <p class="font-circular same-line">ETHIndia is a hackathon — a movement with the goal of inspiring and fostering a community of builders promoting technological advancements for Ethereum. It’s a place where the leading minds in the Ethereum ecosystem are uniting with 1500+ builders from around the globe to build decentralized applications for the future. And we invite you to be one of them. Help us build a garden where everyone is self-sovereign, where everyone is an owner, where hierarchies don’t exist.</p>
+          <div>
+            <h2 class="font-fragile same-line">
+              Celebrating our love for building
+            </h2>
+          </div>
+          <div>
+            <p class="font-circular same-line">
+              ETHIndia is a hackathon — a movement with the goal of inspiring
+              and fostering a community of builders promoting technological
+              advancements for Ethereum. It’s a place where the leading minds in
+              the Ethereum ecosystem are uniting with 1500+ builders from around
+              the globe to build decentralized applications for the future. And
+              we invite you to be one of them. Help us build a garden where
+              everyone is self-sovereign, where everyone is an owner, where
+              hierarchies don’t exist.
+            </p>
+          </div>
         </div>
+        <div class="celebrating-bridge-img">
+          <img src="assets\images\page\metro.webp" id="metro-img" />
         </div>
-            <div class="celebrating-bridge-img">
-                <img src="assets\images\page\metro.webp" id="metro-img">
+      </section>
+      <section id="speakers"></section>
+      <section
+        id="partners"
+      >
+      <div class="content">
+        <div class="partner-heading">
+          <h2 class="font-fragile">Partners</h2>
+        </div>
+        <div id="partner-links">
+          <div class="partner-img half"><img src="assets\images\partners\ipfs_filecoin_lockup_2022-Oct.svg" alt=""></div>
+          <div class="partner-img half"><img src="assets\images\partners\polygon.svg"></div>
+          <div class="partner-img half"><img src="assets\images\partners\Worldcoin_Lockup1.svg"></div>
+          <div class="partner-img half"><img src="assets\images\partners\Biconomy.svg" alt=""></div>
+          <div class="partner-img oneThird"><img src="assets\images\partners\ey.svg" alt=""></div>
+          <div class="partner-img oneThird"><img src="assets\images\partners\dune-analytics.png" alt=""></div>
+          <div class="partner-img oneThird"><img src="assets\images\partners\PowerLoomlogo.png" alt=""></div>
+          <div class="partner-img oneThird"><img src="assets\images\partners\hyperlane.svg" alt=""></div>
+          <div class="partner-img oneThird"><img src="assets\images\partners\connext.svg" alt=""></div>
+          <div class="partner-img oneThird"><img src="assets\images\partners\Mina.svg" alt=""></div>
+          <div class="partner-img oneThird"><img src="assets\images\partners\Master_Stack.svg" alt=""></div>
+          <div class="partner-img oneThird"><img src="assets\images\partners\Cartesi_Logo.svg" alt=""></div>
+          <div class="partner-img oneThird"><img src="assets\images\partners\instapp.svg" alt=""></div>
+          <div class="partner-img oneThird"><img src="assets\images\partners\cronos-light-hd1.svg" alt=""></div>
+          <div class="partner-img oneThird"><img src="assets\images\partners\thegraph.svg" alt=""></div>
+          <div class="partner-img oneThird"><img src="assets\images\partners\v.svg" alt=""></div>
+          <div class="partner-img oneThird"><img src="assets\images\partners\Push-Logo-Protocol-Dark.svg" alt=""></div>
+          <div class="partner-img oneThird"><img src="assets\images\partners\leeper.svg" alt=""></div>
+          <div class="partner-img oneThird"><img src="assets\images\partners\LI.FIWordmarkLogo.svg" alt=""></div>
+          <div class="partner-img oneThird"><img src="assets\images\partners\Covalent_Wordmark_Three_Color.svg" alt=""></div>
+          <div class="partner-img oneThird"><img src="assets\images\partners\Safe_Logos_H-Lockup_Green.svg" alt=""></div>
+          <div class="partner-img oneThird"><img src="assets\images\partners\etherspotlogo-04.svg" alt=""></div>
+          <div class="partner-img oneForth"><img src="assets\images\partners\LENSLOGO_copy_Full.svg" alt=""></div>
+          <div class="partner-img oneForth"><img src="assets\images\partners\ShardeumLogoDark1.svg" alt=""></div>
+          <div class="partner-img oneForth"><img src="assets\images\partners\Neftport.svg" alt=""></div>
+          <div class="partner-img oneForth"><img src="assets\images\partners\MoonbeamLogoFinal-Blue.svg" alt=""></div>
+          <div class="partner-img oneForth"><img src="assets\images\partners\GnosisChain-Vertical-Moss.svg" alt=""></div>
+          <div class="partner-img oneForth"><img src="assets\images\partners\Quicknode.svg" alt=""></div>
+        </div>
+        <p id="partner-reach" class="font-circular" style="margin-top:50px; font-size:1.575rem ">Interested in partnering with us? Email us at <a href="mailto:partner@ethglobal.com" style="color:rgb(0, 110, 255);">partner@ethglobal.com</a></p>
+      </div>
+      </section>
+      <section id="faq">
+        <div class="content">
+          <div class="faq-heading">
+            <h2 class="font-fragile">Frequently asked questions</h2>
+          </div>
+          <div class="questions">
+            <div class="question-block">
+              <div class="question">
+                Who can participate?
+                <span class="expand-btn">
+                    <i class="fa fa-angle-down"></i>
+                </span>
+              </div>
+              <div class="answer hide">
+                Everyone is welcome to participate, be they, developers or
+                designers. Acceptance of applications is based on their interest
+                in Ethereum and proven ability to BUILD- whether it's writing
+                software, designing beautiful UX, or something entirely else. If
+                you are under 18 years of age, we'll need a parental consent
+                form.
+              </div>
             </div>
-        
-        </section>
-        <section id="speakers"></section>
-        <section id="partners"></section>
-        <section id="faqs"></section>
-        <section id="venue"></section>
+            <div class="question-block">
+              <div class="question">When will the applications close?<span class="expand-btn">
+                <i class="fa fa-angle-down"></i>
+            </span></div>
+              <div class="answer hide">
+                The application period will close on 31se October 2022 at 11:59
+                PM IST. We evaluate applications on a rolling basis and will
+                notify acceptance via email. Ince accepted, you'll have four
+                days to confirm your presence at the hackathon.
+              </div>
+            </div>
+            <div class="question-block">
+              <div class="question">How does the application process work?<span class="expand-btn">
+                <i class="fa fa-angle-down"></i>
+            </span></div>
+              <div class="answer hide">
+                We're looking for people who "do". Folks who are passionate
+                enough to work on crazy world-changing ideas. Tell us what makes
+                you apply to ETHIndia, and what is it that excites you or makes
+                you proud. Or anything else that you think will strengthen your
+                chances of acceptance. We can get to know you better from your
+                past prjects, open source contributions, GitHub/Devfolio
+                profile, and paritcipation in hackathons.
+              </div>
+            </div>
+            <div class="question-block">
+              <div class="question">How much does it cost?<span class="expand-btn">
+                <i class="fa fa-angle-down"></i>
+            </span></div>
+              <div class="answer hide">
+                Zero. Zip. Zilch. Admission to ETHIndia is entirely free, thanks
+                to our sponsors. We'll provide you with a weekend's worth of
+                schwag, meals, drinks snacks, and a place to crash when you need
+                a vreak from coding.
+              </div>
+            </div>
+            <div class="question-block">
+              <div class="question">Can we apply as a team?<span class="expand-btn">
+                <i class="fa fa-angle-down"></i>
+            </span></div>
+              <div class="answer hide">
+                Yes, you can participate eitehr as an individual or as a team
+                with up to 5 members.
+              </div>
+            </div>
+            <div class="question-block">
+              <div class="question">How big can a team be?<span class="expand-btn">
+                <i class="fa fa-angle-down"></i>
+            </span></div>
+              <div class="answer hide">
+                You can form teams of upto 5 members. Most teams aim to have a
+                mix of members with both design and developer skills.
+              </div>
+            </div>
+            <div class="question-block">
+              <div class="question">What if I don't have a tem or an idea?<span class="expand-btn">
+                <i class="fa fa-angle-down"></i>
+            </span></div>
+              <div class="answer hide">
+                Fret not; most people don't! We'll have team formation and
+                ideation events deared towards helping you find people to work
+                with.
+              </div>
+            </div>
+            <div class="question-block">
+              <div class="question">
+                Once I am accepted, what do i need to bring?<span class="expand-btn">
+                  <i class="fa fa-angle-down"></i>
+              </span>
+              </div>
+              <div class="answer hide">
+                A valid government-issued photo ID, laptop, phone, chargers, any
+                sleeping equipment you might what(we'll be providing matresses),
+                and our fav NSB tee!
+              </div>
+            </div>
+            <div class="question-block">
+              <div class="question">What shouldn't I bring?<span class="expand-btn">
+                <i class="fa fa-angle-down"></i>
+            </span></div>
+              <div class="answer hide">
+                Weapons of any kind, drugs, or alcohol. If you're unsure whether
+                something will be okay, please ask ahead of time!
+              </div>
+            </div>
+            <div class="question-block">
+              <div class="question">
+                Do you provide travel reimbursements to hackers?<span class="expand-btn">
+                  <i class="fa fa-angle-down"></i>
+              </span>
+              </div>
+              <div class="answer hide">
+                ETHIndia is free-of-charge, thanks to the support from our
+                partners and sponsors, but the event cannot cover travel or
+                other expenses for attendees yet.
+              </div>
+            </div>
+            <div class="question-block">
+              <div class="question">How does judging work?<span class="expand-btn">
+                <i class="fa fa-angle-down"></i>
+            </span></div>
+              <div class="answer hide">
+                A panel of builders will evaluate hacks based on creativity,
+                technical difficulty, design, and usefulness. The best 10
+                projects chosen by the panel will demo what they have built to
+                everyone at ETHIndia during the closing ceremony. New judges
+                will be announced on a rolling basis on <a>Twitter</a> and
+                <a>Instagram</a>, so make sure that you follow us!
+              </div>
+            </div>
+            <div class="question-block">
+              <div class="question">Did we miss something?<span class="expand-btn">
+                <i class="fa fa-angle-down"></i>
+            </span></div>
+              <div class="answer hide">
+                Tweet us your questions at <a>@ethindia</a> or reach out to us
+                at <a>ethindia@devfolio.co</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="image">
+          <img
+            class="faq-image"
+            src="assets\images\page\signboard.webp"
+            alt=""
+          />
+        </div>
+      </section>
+      <section id="venue"></section>
     </main>
     <footer></footer>
-</body>
+    <script>
+        $(".question-block").click(function(){
+          $(this).find(".expand-btn").toggleClass("rotate");
+          $(this).find(".answer").slideToggle();
+          
+        });
 
+    </script>
+  </body>
 </html>
