@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/favicon/favicon-114x114.png" type="image/x-icon">
+    <title>ETHIndia | Clone Project</title>
+    <link as="font" rel="preload" href="assets/fonts/fragile/Fragile.otf" type="font/otf" crossorigin="anonymous" />
+    <link as="font" rel="preload" href="assets/fonts/circular/CircularStd-Book.woff" type="font/woff" crossorigin="anonymous" />
+    <link as="font" rel="preload" href="assets/fonts/circular/CircularStd-BookItalic.otf" type="font/otf" crossorigin="anonymous" />
+    <link as="font" rel="preload" href="assets/fonts/circular/CircularStd-Bold.woff" type="font/woff" crossorigin="anonymous" />
+    <link as="font" rel="preload" href="assets/fonts/circular/CircularStd-BoldItalic.otf" type="font/otf" crossorigin="anonymous" />
+    <link as="font" rel="preload" href="assets/fonts/circular/CircularStd-Light.woff" type="font/woff" crossorigin="anonymous" />
+    <link as="font" rel="preload" href="assets/fonts/circular/CircularStd-LightItalic.otf" type="font/otf" crossorigin="anonymous" />
+    <meta name="application-name" content="ETHIndia" />
+    <meta name="theme-color" content="#003B50" />
+
+    <link rel="stylesheet" href="assets/styles/variable.css">
+    <link rel="stylesheet" href="assets/styles/global.css">
+    <link rel="stylesheet" href="assets/styles/about.css">
+    <link rel="stylesheet" href="assets/styles/popup.css">
+    <link rel="stylesheet" href="assets/styles/celebrating.css">
+    <script src="assets/scripts/popup.js"></script>
+    <link rel="stylesheet" href="nav.css">
+
+</head>
+
+<body>
+    <div class="popup" id="popup">
+        <div class="popup-cntnt">
+            <button class="close-popup-btn" onclick="closePopup();">&#10006;</button>
+            <div class="popup-dt">
+                <div class="indi-dt-box popup-banner">
+                    Create a Devfolio account to continue your application to ETHIndia 2022.
+                </div>
+                <div class="popup-lg-cntnr">
+                    <img src="assets/svg/devfolio-logowname.svg" alt="">
+                </div>
+                <div class="popup-tgln">
+                    <h1>
+                        Your one application
+                        <br>
+                        to the best hackathons
+                    </h1>
+                </div>
+                <div class="indi-dt-box form-cntnr">
+                    <form action="" method="POST" id="signup-form">
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header></header>
+
+    <main>
+        <nav id="full-screen" class="full-screen-display threeForth-screen-display show">
+            <img
+              class="nav-img-div show full-screen-display threeForth-screen-display"
+              src="assets/images/logo/EthIndia-Logo.png"
+              alt="Logo"
+              class="ethindia-logo"
+            />
+            <div class="menu-content show">
+              <div class="menu-item show">About</div>
+              <div class="menu-item show">Speakers</div>
+              <div class="menu-item show">Partners</div>
+              <div class="menu-item show">FAQ's</div>
+              <div class="menu-item show">Venue</div>
+              <div
+                class="menu-item show full-screen-display threeForth-screen-display"
+              >
+                <button class="apply-btn"><img src="" alt="D" /> Apply now</button>
+              </div>
+            </div>
+          </nav>
+        <section id="about">
+            <div id="hero">
+                <div class="sky-img-cntnr">
+                    <img src="assets/images/page/sky.webp" alt="background sky" loading="lazy">
+                </div>
+                <img src="assets/images/page/bengaluru-street.webp" alt="bengaluru street" class="bnglr-street">
+                <div class="hero-text">
+                    <h1 class="font-fragile">Asia's Biggest Ethereum Hackathon</h1>
+                    <h3 class="font-circular">Dec 2nd - 4th, 2022 · Bengaluru</h3>
+                    <div class="btn-lg-cntnr">
+                        <div class="btn-cntnr">
+                            <button class="apply-btn" onclick='openPopup()'>
+                                <img src="assets/images/page/devfolio-logo-white.png" alt=""> Apply Now
+                            </button>
+                        </div>
+                        <div class="lg-cntnr">
+                            <img src="assets/svg/ethglobal-logo-name.svg" alt="">
+                            <div class="lg-cntnr-sprtr"></div>
+                            <img src="assets/svg/devfolio-logo.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="celebrating">
+        <div class="content">
+            <div>
+            <h2 class="font-fragile same-line">Celebrating our love for building</h2>
+            </div>
+            <div>
+            <p class="font-circular same-line">ETHIndia is a hackathon — a movement with the goal of inspiring and fostering a community of builders promoting technological advancements for Ethereum. It’s a place where the leading minds in the Ethereum ecosystem are uniting with 1500+ builders from around the globe to build decentralized applications for the future. And we invite you to be one of them. Help us build a garden where everyone is self-sovereign, where everyone is an owner, where hierarchies don’t exist.</p>
+        </div>
+        </div>
+            <div class="celebrating-bridge-img">
+                <img src="assets\images\page\metro.webp" id="metro-img">
+            </div>
+        
+        </section>
+        <section id="speakers"></section>
+        <section id="partners"></section>
+        <section id="faqs"></section>
+        <section id="venue"></section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
