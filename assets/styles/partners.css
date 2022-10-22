@@ -6,6 +6,11 @@
     flex-direction: column;
 }
 
+.partner-heading h2{
+    font-size: 6rem;
+    text-align: center;
+}
+
 #partners .content {
     /* background-color: rgb(192, 192, 229); */
     margin: auto;
@@ -17,43 +22,56 @@
     /* margin-left: 12.5%; */
 }
 
+
+
 .content #partner-links {
+    /* background-color: pink; */
     margin-top: -2rem;
     height: 70%;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-self: center;
+    gap: 0.75rem;
+    justify-content: center;
+    /* align-items: center; */
 }
 
 .half {
-    width: 300px;
+    width: 47%;
+    min-width: 300px;
 }
 
 .oneThird {
-    width: 200px;
+    width: 30%;
+    min-width: 200px;
 }
 
 .oneForth {
-    width: 135px;
+    width: 22.5%;
+    min-width: 135px;
 }
 
 .partner-img{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     background-color: #FFF;
-    border-radius: 7%;
-    height: 200px;
-    margin: 0.75rem auto;
+    border-radius: 10px;
+    height: auto;
     padding: 1rem;
+    /* min-width: 0px; */
+    max-width: 80%;
+    min-height: 150px;
+    max-height: 200px;
 
 }
-.partner-img img {
-    
+.partner-img img {  
     height: auto;
-    width: 80%;
+    width: 70%;
+    max-width: 150px;
     margin: auto;
     /* align-items: center; */
+}
+
+
+#partner p{
+    text-align: center;
 }

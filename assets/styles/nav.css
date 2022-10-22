@@ -1,67 +1,133 @@
-.full-screen-display div {
-    display: inline-block;
+#nav-1 .nav-bar {
+  height: 5rem;
+  width: 80%;
+  background-color: white;
+  position: absolute;
+  top: 15px;
+  left: 10%;
+  z-index: 1000;
+  border-radius: 15px;
+}
+
+#nav-1 img {
+  height: 35%;
+  width: auto;
+  position: absolute;
+  top: 32.5%;
+  left: 12px;
+}
+
+.nav-bar .apply-btn {
+  height: 3.7rem;
+  width: 12.25rem;
+  padding: auto 25px;
+  position: absolute;
+  top: 11.5%;
+  right: 17px;
+  box-shadow: none;
+}
+/* 
+.nav-bar .apply-btn .logo-img {
+  height: 1.9rem; 
+  position: absoulte; 
+  top: 13px; 
+  left: 25px;
+} */
+
+#nav-2 {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+}
+
+#nav-2 .nav-bar {
+  height: 4.4rem;
+  width: 100%;
+  background-color: white;
+  position: sticky;
+  top: 0px;
+  left: 100%;
+}
+
+#nav-2 .nav-bar img {
+  height: 75%;
+  margin-left: 14px;
+  margin-top: 7px;
+  position: sticky;
+}
+
+#nav-2 .nav-bar .nav-menu {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 22.5px;
+  right: 32.5px;
+}
+
+#nav-3 .nav-bar, #nav-4 .nav-bar {
+  height: 5rem;
+  width: 80%;
+  background-color: white;
+  position: absolute;
+  top: 15px;
+  left: 10%;
+  z-index: 1000;
+  border-radius: 15px;
+}
+
+#nav-3 .nav-bar img {
+  height: 35%;
+  width: auto;
+  position: absolute;
+  top: 32.5%;
+  left: 12px;
+}
+
+#nav-3 .nav-bar .nav-list, #nav-4 .nav-bar .nav-list {
+  list-style: none;
+  display: flex;
+  width: 26.5rem;
+  justify-content: space-evenly;
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: rgb(61, 60, 60);
+  position: absolute;
+  top: 10px;
+  right: 13.2rem;
+  height: 4rem;
+  margin-top: 0px;
+  padding-top: 18px;
+}
+
+#nav-3 .nav-bar .nav-list .nav-items:hover, #nav-4 .nav-bar .nav-list .nav-items:hover{
+/* border-top: 4px solid pink; */
+padding-top: 0.75rem;
+margin-top: -1rem;
+color:rgb(253, 34, 136);
+}
+
+#nav-3 .nav-bar .nav-list .nav-items:active, #nav-3 .nav-bar .nav-list .nav-items:active {
+  border-top: 4px solid rgb(253, 34, 136);
+  padding-top: 0.75rem;
+  margin-top: 0rem;
+  color:pink;
   }
 
-  .show {
-      display: none;
-  }
-  nav {
-    height: 60px;
-    width: 80%;
-    margin: auto;
-    border-radius: 10px;
-    margin-top: 10px;
-    padding: 10px;
-    padding-bottom: 10px;
-    background-color: white;
-    z-index:1000;
-  }
+#nav-4{
+  position: absolute;
+  height:5rem;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+} 
 
-  nav .nav-img-div {
-    height: 25px;
-    width: 100px;
-    float: inline-start;
-    text-align: center;
-    /* border: 1px solid black; */
+#nav-4 .nav-bar {
+  margin-top: -15px
+}
 
-    margin-top: 3px; /* margin-left: 5px; */
-  }
-
-  nav .menu-content {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-    /* border: 1px solid grey; */
-    margin-left: 30px;
-    /* margin-bottom: 100px; */
-  }
-
-  nav .menu-content .menu-item {
-    height: 35px;
-    width: auto;
-    margin: 0 1%;
-    text-align: center;
-    padding-top: 5px;
-    font-size: large;
-    font-weight: 100;
-    color: rgb(76, 75, 75);
-    transition: color 1s;
-    cursor: pointer;
-  }
-
-  nav .menu-content .menu-item:hover {
-    color: #f91f88;
-  }
-
-  button {
-    padding: 15px;
-    padding-top: 10px;
-    margin-top: -11px;
-    font-size: large;
-    font-weight: bold;
-    color: white;
-    border: none;
-    background-color: #f91f88;
-    box-shadow: 3px 3px 2px 2px black;
-    border-radius: 10px;
-  }
+#nav-4 .nav-bar img {
+  height: 35%;
+  width: auto;
+  position: absolute;
+  top: 26.5%;
+  left: 12px;
+}

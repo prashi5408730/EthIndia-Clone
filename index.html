@@ -69,12 +69,13 @@
     <link rel="stylesheet" href="assets/styles/celebrating.css" />
     <link rel="stylesheet" href="assets/styles/faq.css" />
     <link rel="stylesheet" href="assets/styles/partners.css" />
+    <link rel="stylesheet" href="assets/styles/marquee.css" />
+    <link rel="stylesheet" href="assets/styles/nav.css" />
 
     <script src="assets/scripts/faq.js"></script>
     <script src="assets/scripts/popup.js"></script>
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!-- <link rel="stylesheet" href="nav.css" /> -->
   </head>
 
   <body>
@@ -107,26 +108,68 @@
     <header></header>
 
     <main>
-      <!-- <nav id="full-screen" class="full-screen-display threeForth-screen-display show">
-            <img
-              class="nav-img-div show full-screen-display threeForth-screen-display"
-              src="assets/images/logo/EthIndia-Logo.png"
-              alt="Logo"
-              class="ethindia-logo"
-            />
-            <div class="menu-content show">
-              <div class="menu-item show">About</div>
-              <div class="menu-item show">Speakers</div>
-              <div class="menu-item show">Partners</div>
-              <div class="menu-item show">FAQ's</div>
-              <div class="menu-item show">Venue</div>
-              <div
-                class="menu-item show full-screen-display threeForth-screen-display"
-              >
-                <button class="apply-btn"><img src="" alt="D" /> Apply now</button>
+          <nav id="nav-1" class="three-forth hide">
+            <div class="nav-bar">
+                <img src="assets\images\logo\EthIndia-Logo.png"  alt="">
+                <button class="apply-btn" onclick="openPopup()">
+                  <img
+                    class="logo-img"
+                    src="assets/images/page/devfolio-logo-white.png"
+                    alt=""
+                    style="height: 1.9rem; position: absoulte; top: 13px; left: 25px;"
+                  />
+                  <div style="font-size: 20px; font-weight:500; letter-spacing: 0.05rem; line-height: 30px; position: absolute; top: 15px; right: 20px;">Apply now</div>
+                </button>
               </div>
+          </nav>
+          <nav id="nav-2" class="half hide">
+                <div class="nav-bar">
+                  <img src="assets\images\logo\ethindia1-logo.svg" alt="">
+                  <i class="fa fa-bars nav-menu"></i>
+                </div>
+          </nav>
+          <nav id="nav-3" class="full-screen hide">
+            <div class="nav-bar">
+              <img id="logo-img" src="assets\images\logo\EthIndia-Logo.png"  alt=""  >
+              <ul class="nav-list">
+                <li class="nav-items"><a href="#">About</a></li>
+                <li class="nav-items"><a href="#speakers">Speakers</a></li>
+                <li class="nav-items"><a href="#partners">Partners</a></li>
+                <li class="nav-items"><a href="#faqs">FAQs</a></li>
+                <li class="nav-items"><a href="#venue">Venue</a></li>
+              </ul>
+              <button class="apply-btn" onclick="openPopup()" style="height: 3.7rem; padding: auto 25px; font-size: 20px; font-weight:500; letter-spacing: 0.05rem; line-height: 40px; position: absolute; top: 11.5%; right: 17px; box-shadow: none; ">
+                <img
+                  src="assets/images/page/devfolio-logo-white.png"
+                  alt=""
+                  style="height: 1.9rem; position: absoulte; top: 13px; left: 25px;"
+                />
+                <div style="font-size: 20px; font-weight:500; letter-spacing: 0.05rem; line-height: 30px; position: absolute; top: 15px; right: 20px;">Apply now</div>
+              </button>
             </div>
-          </nav> -->
+          </nav>
+          <nav id="nav-4" class="scroll-full-screen hide">
+            <div class="nav-bar">
+              <img id="logo-img" src="assets\images\logo\EthIndia-Logo.png"  alt=""  >
+              <ul class="nav-list">
+                <li class="nav-items"><a href="#">About</a></li>
+                <li class="nav-items"><a href="#speakers">Speakers</a></li>
+                <li class="nav-items"><a href="#partners">Partners</a></li>
+                <li class="nav-items"><a href="#faqs">FAQs</a></li>
+                <li class="nav-items"><a href="#venue">Venue</a></li>
+              </ul>
+              <button class="apply-btn" onclick="openPopup()" style="height: 3.7rem; padding: auto 25px; font-size: 20px; font-weight:500; letter-spacing: 0.05rem; line-height: 40px; position: absolute; top: 11.5%; right: 17px; box-shadow: none; ">
+                <img
+                  src="assets/images/page/devfolio-logo-white.png"
+                  alt=""
+                  style="height: 1.9rem; position: absoulte; top: 13px; left: 25px;"
+                />
+                <div style="font-size: 20px; font-weight:500; letter-spacing: 0.05rem; line-height: 30px; position: absolute; top: 15px; right: 20px;">Apply now</div>
+              </button>
+            </div>
+          </nav>
+
+          </nav>
       <section id="about">
         <div id="hero">
           <div class="sky-img-cntnr">
@@ -187,14 +230,18 @@
           <img src="assets\images\page\metro.webp" id="metro-img" />
         </div>
       </section>
-      <section id="speakers"></section>
+      <div class="ribbon">
+        <marquee behavior="" direction="left">Lorem ipsum dolor sit amet.</marquee>
+      </div>
+      <section id="speakers" style="background-color:grey; height: 300px; width: 100%"></section>
       <section
         id="partners"
       >
+      <div class="partner-heading">
+        <h2 class="font-fragile ">Partners</h2>
+      </div>
       <div class="content">
-        <div class="partner-heading">
-          <h2 class="font-fragile">Partners</h2>
-        </div>
+        
         <div id="partner-links">
           <div class="partner-img half"><img src="assets\images\partners\ipfs_filecoin_lockup_2022-Oct.svg" alt=""></div>
           <div class="partner-img half"><img src="assets\images\partners\polygon.svg"></div>
@@ -225,8 +272,8 @@
           <div class="partner-img oneForth"><img src="assets\images\partners\GnosisChain-Vertical-Moss.svg" alt=""></div>
           <div class="partner-img oneForth"><img src="assets\images\partners\Quicknode.svg" alt=""></div>
         </div>
-        <p id="partner-reach" class="font-circular" style="margin-top:50px; font-size:1.575rem ">Interested in partnering with us? Email us at <a href="mailto:partner@ethglobal.com" style="color:rgb(0, 110, 255);">partner@ethglobal.com</a></p>
       </div>
+      <p id="partner-reach" class="font-circular" align="center" style="margin-top:50px; font-size:1.575rem ">Interested in partnering with us? Email us at <a href="mailto:partner@ethglobal.com" style="color:rgb(0, 110, 255);">partner@ethglobal.com</a></p>
       </section>
       <section id="faq">
         <div class="content">

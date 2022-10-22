@@ -89,3 +89,8 @@
     /* margin-bottom: 3rem; */
     margin-bottom: 0px;
 }
+
+.rotate {
+    transform: rotate(180deg);
+    transition: ease;
+}
